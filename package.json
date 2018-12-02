@@ -4,20 +4,11 @@
   "description": "",
   "main": "lib/server.js",
   "scripts": {
-    "build": "babel lib -d dist",
-    "start": "nodemon lib/server.js --exec babel-node",
-    "serve": "node dist/server.js",
-    "test": "mocha --require babel-register"
+    "start": "node server.js "
   },
   "author": "rupam",
   "license": "ISC",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.18.7"
-  },
+  "devDependencies": {},
   "dependencies": {
     "express": "^4.16.4"
   }
