@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "babel server.js -d dist",
-    "start": "npm run build && nodemon dist/server.js",
+    "build": "babel lib -d dist",
+    "start": "nodemon lib/server.js --exec babel-node",
     "serve": "node dist/server.js",
     "test": "mocha --require babel-register"
   },
